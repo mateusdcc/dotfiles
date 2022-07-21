@@ -1,0 +1,9 @@
+pulseaudio --start, pulseaudio
+redshift-gtk,redshift-gtk
+setxkbmap -layout br,us -option grp:alt_space_toggle,setxkbmap
+sleep 5; nm-applet,nm-applet
+feh --bg-center ~/.config/bspwm/wallpaper.png,feh
+docker start 192e65624b86,none
+xbanish,xbanish
+xcompmgr,xcompmgr
+sleep 2; polybar,polybar

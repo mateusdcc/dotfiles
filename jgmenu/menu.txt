@@ -1,0 +1,14 @@
+Restart WM,bspc wm -r
+Restart sxhkd, pkill -USR1 -x sxhkd
+Web Browser,firefox,firefox-bin
+Favorites,^checkout(favorites),user-bookmarks
+^sep()
+Launch Terminal,kitty,utilities-terminal
+^sep()
+Exit,^checkout(exit),system-shutdown
+^tag(favorites)
+Neovim,kitty -e nvim,nvim
+^tag(exit)
+Log Out,pkill bspwm,system-logout
+Reboot,loginctl reboot,system-reboot
+Shutdown,loginctl poweroff,system-shutdown
