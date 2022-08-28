@@ -26,6 +26,9 @@ super + shift + s
 super + b
 	firefox
 
+super + l
+	firefox --private-window
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

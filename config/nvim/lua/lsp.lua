@@ -58,7 +58,7 @@ local on_attach = function(client, bufnr)
   local bufopts = { noremap=true, silent=true, buffer=bufnr }
 end
 
-local servers = { 'pyright', 'rust_analyzer', 'cssls', 'html', 'jsonls', 'texlab'}
+local servers = { 'pyright', 'tsserver', 'tailwindcss', 'rust_analyzer', 'cssls', 'html', 'jsonls', 'texlab'}
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     capabilities = capabilities,

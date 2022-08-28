@@ -95,6 +95,12 @@ require('packer').startup(function()
     }
 
     -- LSP, CMP
+    use { 'mrshmllow/document-color.nvim', config = function()
+      require("document-color").setup {
+        mode = "background",
+      }
+      end
+    }
     use {
       'weilbith/nvim-code-action-menu',
       cmd = 'CodeActionMenu',
@@ -141,7 +147,7 @@ require('packer').startup(function()
     use 'noib3/nvim-cokeline'
 
     -- Github Copilot
-    -- use 'github/copilot.vim'
+    use 'github/copilot.vim'
 
     -- Startup profile
     use "dstein64/vim-startuptime"
